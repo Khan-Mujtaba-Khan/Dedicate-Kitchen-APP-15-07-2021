@@ -4,7 +4,7 @@
 //
 //  Created by MUJTABA KHAN on 15/07/2021.
 //
-
+ 
 import UIKit
 
 @main
@@ -14,6 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UITabBar.appearance().tintColor = #colorLiteral(red: 0.4198184609, green: 0.4803213477, blue: 0.5560008883, alpha: 1)
+        
+        UITableView.appearance().tintColor=#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+        
+        
         return true
     }
 

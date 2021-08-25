@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="40" id="KGk-i7-Jjw" customClass="AccountDetailsMoreTableViewCell" customModule="Dedicate_Kitchen_APP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B15-nL-0yz">
+                        <rect key="frame" x="12" y="10" width="390" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yt6-V4-c7D">
+                                <rect key="frame" x="20" y="5" width="39.5" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="39.5" id="99J-kL-Z6q"/>
+                                    <constraint firstAttribute="height" constant="20" id="bwy-Sv-BUp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.33333334329999997" green="0.39215683940000001" blue="0.49019610879999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="DAl-lO-nJm"/>
+                            <constraint firstItem="yt6-V4-c7D" firstAttribute="top" secondItem="B15-nL-0yz" secondAttribute="top" constant="5" id="MKM-rt-AMd"/>
+                            <constraint firstItem="yt6-V4-c7D" firstAttribute="leading" secondItem="B15-nL-0yz" secondAttribute="leading" constant="20" id="Y0w-3Y-yn7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="AccountDetailsColor"/>
+                <constraints>
+                    <constraint firstItem="B15-nL-0yz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="2n5-ft-VoZ"/>
+                    <constraint firstAttribute="trailing" secondItem="B15-nL-0yz" secondAttribute="trailing" constant="12" id="BAb-PG-i3t"/>
+                    <constraint firstItem="B15-nL-0yz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="MQ6-bt-IiO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="AccountDetailsMoreBackView" destination="B15-nL-0yz" id="B4D-4e-3F6"/>
+                <outlet property="AccountDetailsMoreTitle" destination="yt6-V4-c7D" id="4EG-EZ-LPG"/>
+            </connections>
+            <point key="canvasLocation" x="71.014492753623188" y="69.642857142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccountDetailsColor">
+            <color red="0.88200002908706665" green="0.88200002908706665" blue="0.88599997758865356" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

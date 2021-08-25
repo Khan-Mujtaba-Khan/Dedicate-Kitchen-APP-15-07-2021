@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MealPre03TableViewCell" customModule="Dedicate_Kitchen_APP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZVv-5C-PQI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Tfb-B2-kyG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
+                                <color key="backgroundColor" red="0.97254908080000002" green="0.98039215800000001" blue="0.98431372640000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ftL-WH-Vkg">
+                                    <size key="itemSize" width="130" height="130"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Tfb-B2-kyG" secondAttribute="trailing" id="Gdw-aP-XN0"/>
+                            <constraint firstAttribute="bottom" secondItem="Tfb-B2-kyG" secondAttribute="bottom" id="Qtf-HD-0DH"/>
+                            <constraint firstItem="Tfb-B2-kyG" firstAttribute="top" secondItem="ZVv-5C-PQI" secondAttribute="top" id="QuC-e8-9P1"/>
+                            <constraint firstItem="Tfb-B2-kyG" firstAttribute="leading" secondItem="ZVv-5C-PQI" secondAttribute="leading" id="j9k-IL-H33"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ZVv-5C-PQI" secondAttribute="bottom" id="18K-Fl-hgT"/>
+                    <constraint firstItem="ZVv-5C-PQI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="QiT-nA-Mba"/>
+                    <constraint firstItem="ZVv-5C-PQI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="a7F-gk-ipK"/>
+                    <constraint firstAttribute="trailing" secondItem="ZVv-5C-PQI" secondAttribute="trailing" id="hkQ-GS-Jmj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="CollectionViewMealpre03" destination="Tfb-B2-kyG" id="JC4-jP-7Of"/>
+                <outlet property="MealPre03BackView01" destination="ZVv-5C-PQI" id="50p-ID-SKd"/>
+            </connections>
+            <point key="canvasLocation" x="60.869565217391312" y="70.982142857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

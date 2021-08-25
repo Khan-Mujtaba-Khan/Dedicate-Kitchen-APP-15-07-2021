@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PickUp02CollectionViewCell" id="gTV-IL-0wX" customClass="PickUp02CollectionViewCell" customModule="Dedicate_Kitchen_APP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="240"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="240"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fCT-cm-y4E">
+                        <rect key="frame" x="10" y="0.0" width="160" height="240"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BREAKFAST" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WbN-W1-7bo">
+                                <rect key="frame" x="5" y="196" width="150" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="yuU-7n-d6b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OurMenuA1" translatesAutoresizingMaskIntoConstraints="NO" id="Zjk-Ln-pKF">
+                                <rect key="frame" x="5" y="20" width="150" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="2Ss-eg-ZtP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Zjk-Ln-pKF" firstAttribute="top" secondItem="fCT-cm-y4E" secondAttribute="top" constant="20" id="0Hb-21-o5V"/>
+                            <constraint firstItem="Zjk-Ln-pKF" firstAttribute="leading" secondItem="fCT-cm-y4E" secondAttribute="leading" constant="5" id="E2I-Oe-ApP"/>
+                            <constraint firstAttribute="bottom" secondItem="WbN-W1-7bo" secondAttribute="bottom" constant="20" id="EUb-J1-iqB"/>
+                            <constraint firstAttribute="trailing" secondItem="Zjk-Ln-pKF" secondAttribute="trailing" constant="5" id="eDU-Z1-f65"/>
+                            <constraint firstItem="WbN-W1-7bo" firstAttribute="leading" secondItem="fCT-cm-y4E" secondAttribute="leading" constant="5" id="iFt-sG-6Y5"/>
+                            <constraint firstAttribute="trailing" secondItem="WbN-W1-7bo" secondAttribute="trailing" constant="5" id="nqF-AP-K0F"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fCT-cm-y4E" secondAttribute="trailing" constant="10" id="4SU-Wa-ORQ"/>
+                <constraint firstItem="fCT-cm-y4E" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Gy1-u3-riT"/>
+                <constraint firstAttribute="bottom" secondItem="fCT-cm-y4E" secondAttribute="bottom" id="jbp-hM-LLh"/>
+                <constraint firstItem="fCT-cm-y4E" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="rSt-vj-Id6"/>
+            </constraints>
+            <size key="customSize" width="307" height="206"/>
+            <connections>
+                <outlet property="BackView" destination="fCT-cm-y4E" id="AbJ-iq-PHQ"/>
+                <outlet property="Img" destination="Zjk-Ln-pKF" id="phC-qd-iCg"/>
+                <outlet property="Lbl" destination="WbN-W1-7bo" id="IWe-ar-hUo"/>
+            </connections>
+            <point key="canvasLocation" x="27.536231884057973" y="145.98214285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="OurMenuA1" width="138" height="74"/>
+    </resources>
+</document>

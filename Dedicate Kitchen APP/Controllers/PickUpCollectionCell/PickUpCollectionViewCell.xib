@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PickUpCollectionViewCell" reuseIdentifier="PickUpCollectionViewCell" id="gTV-IL-0wX" customClass="PickUpCollectionViewCell" customModule="Dedicate_Kitchen_APP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ldv-94-agm">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="90"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Olu-VN-0aM">
+                                <rect key="frame" x="0.0" y="30" width="150" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="AccountDetailsColor"/>
+                        <constraints>
+                            <constraint firstItem="Olu-VN-0aM" firstAttribute="top" secondItem="Ldv-94-agm" secondAttribute="top" constant="30" id="Eom-t8-HTW"/>
+                            <constraint firstItem="Olu-VN-0aM" firstAttribute="leading" secondItem="Ldv-94-agm" secondAttribute="leading" id="HaW-MG-yuN"/>
+                            <constraint firstAttribute="bottom" secondItem="Olu-VN-0aM" secondAttribute="bottom" constant="30" id="rVX-wp-Lfh"/>
+                            <constraint firstAttribute="trailing" secondItem="Olu-VN-0aM" secondAttribute="trailing" id="set-hi-6Z7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Ldv-94-agm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Bpo-Rd-iK8"/>
+                <constraint firstItem="Ldv-94-agm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NTL-0m-MEr"/>
+                <constraint firstAttribute="trailing" secondItem="Ldv-94-agm" secondAttribute="trailing" id="jJp-vm-mb3"/>
+                <constraint firstAttribute="bottom" secondItem="Ldv-94-agm" secondAttribute="bottom" id="lZu-Ka-jkE"/>
+            </constraints>
+            <size key="customSize" width="414" height="517"/>
+            <connections>
+                <outlet property="BackView" destination="Ldv-94-agm" id="OHB-Tt-ymv"/>
+                <outlet property="TopLbl" destination="Olu-VN-0aM" id="nyC-bM-LKH"/>
+            </connections>
+            <point key="canvasLocation" x="228.98550724637684" y="217.63392857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccountDetailsColor">
+            <color red="0.88200002908706665" green="0.88200002908706665" blue="0.88599997758865356" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

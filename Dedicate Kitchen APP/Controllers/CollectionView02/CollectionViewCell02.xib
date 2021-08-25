@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell02" customModule="Dedicate_Kitchen_APP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="233" height="144"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="233" height="144"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LYZ-hZ-zM4">
+                        <rect key="frame" x="0.0" y="0.0" width="233" height="144"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pC-JN-43p" customClass="Coll">
+                                <rect key="frame" x="54" y="30" width="124" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="JWr-7h-O0o"/>
+                                    <constraint firstAttribute="width" constant="124" id="OAR-rf-CBC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4pC-JN-43p" firstAttribute="leading" secondItem="LYZ-hZ-zM4" secondAttribute="leading" constant="54" id="d9g-0S-zKo"/>
+                            <constraint firstItem="4pC-JN-43p" firstAttribute="top" secondItem="LYZ-hZ-zM4" secondAttribute="top" constant="30" id="wmI-q6-8Uh"/>
+                            <constraint firstAttribute="trailing" secondItem="4pC-JN-43p" secondAttribute="trailing" constant="55" id="yqn-yq-bFx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LYZ-hZ-zM4" secondAttribute="bottom" id="3BZ-fj-Cvt"/>
+                <constraint firstItem="LYZ-hZ-zM4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6Ox-Vd-CD9"/>
+                <constraint firstItem="LYZ-hZ-zM4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hRw-8e-9cd"/>
+                <constraint firstAttribute="trailing" secondItem="LYZ-hZ-zM4" secondAttribute="trailing" id="tG2-of-RNe"/>
+            </constraints>
+            <size key="customSize" width="233" height="144"/>
+            <connections>
+                <outlet property="CollectionLbl01" destination="4pC-JN-43p" id="rYN-ZH-hdg"/>
+            </connections>
+            <point key="canvasLocation" x="177.536231884058" y="115.84821428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
